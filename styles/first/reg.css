@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+*{
+	margin:0;
+	padding:0;
+}
+#content{
+	width:960px;
+	height:514px;
+	margin:auto;
+	text-align:center;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+}
+#content form dl dd{
+	margin:10px;
+}
+#content form dl dd img{
+	width:100px;
+	height:100px;
+}
+#content form dl dd label{
+	width:80px;
+	display:inline-block;
+}
+

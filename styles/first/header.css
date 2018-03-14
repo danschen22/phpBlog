@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:#fff;
+}
+#header{
+	width:960px;
+	height:150px;
+	border:1px solid gray;
+	margin:auto;
+}
+#header #nav ul{
+	list-style:none;
+	float:right;
+}
+#header #nav ul li{
+	float:left;
+	text-align:center;
+	margin:50px 10px 0;
+}
+#header #nav ul li a{
+	color:black;
+	text-decoration:none;
+}
+#header #nav ul li a:hover{
+	color:red;
+	text-decoration:underline;
+}
