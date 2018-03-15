@@ -8,7 +8,7 @@ define('ROOT_PATH',substr(dirname(__FILE__),0,-7));//-7:去掉最后7个
 //设置php 版本
 if(PHP_VERSION < '4.1.0'){
     exit('php version is too low');
-}
+}   
 //引入核心函数库
 require ROOT_PATH.'include/global.fuc.php';
 //执行耗时

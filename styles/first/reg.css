@@ -16,12 +16,11 @@
 #content form dl dd{
 	margin:10px;
 }
-#content form dl dd img{
-	width:100px;
-	height:100px;
-}
 #content form dl dd label{
 	width:80px;
 	display:inline-block;
+}
+#code-img{
+	cursor:pointer;
 }
 
