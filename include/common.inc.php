@@ -8,7 +8,14 @@ define('ROOT_PATH',substr(dirname(__FILE__),0,-7));//-7:去掉最后7个
 //设置php 版本
 if(PHP_VERSION < '4.1.0'){
     exit('php version is too low');
-}   
+}
+//引入数据库连接函数
+require ROOT_PATH.'include/database.fuc.php';
+define('DB_HOST', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'root');
+define('DB_NAME', 'phpblog');
+_connect_db(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
 //引入核心函数库
 require ROOT_PATH.'include/global.fuc.php';
 //执行耗时

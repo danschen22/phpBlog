@@ -27,6 +27,16 @@ function _alert_back($info){
  * @param $height:图片高，默认25
  * @return int 
  */
+function _check_magic_quotes_gpc($str){
+    //get_magic_quotes_gpc() — 获取当前 magic_quotes_gpc 的配置选项设置(magic_quotes_gpc:0关闭，表单提交时不会自动转义；1开启)
+    //mysqli_real_escape_string($username);//mysql_real_escape_string：转义，数据注入sql转义’等
+    if(get_magic_quotes_gpc()){
+        echo '不需要转义';
+    }else{
+        $str = mysqli_real_escape_string($GLOBALS['$conn'],$str);
+    }
+    return $str;
+}
 function _code($width=75,$height=25){
     //随机数
     for($i=0;$i<4;$i++){
